@@ -1,0 +1,157 @@
+@import url('https://www.f0nt.com/release/fc-iconic/');
+
+body {
+  font-family: "FC ICONIC", sans-serif;
+  background: linear-gradient(135deg, #000000, #484848);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('img/bgTest.jpg');
+  background-size: cover;
+}
+
+.quiz-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  max-width: 600px;
+  width: 100%;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  text-align: center;
+  color: #d30d0d;
+  margin-bottom:0px;
+  font-size: 40px;
+  margin-top: 0px;
+}
+
+h2 {
+  text-align: center;
+  color:black;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  font-size: 30px;
+ }
+
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 0px;
+  color: #666;
+  font-size: 20px;
+}
+
+.question {
+  display: none;
+}
+
+.question.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+.question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 25px;
+}
+
+label {
+  display: block;
+  background: #f4f4f9;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin: 6px 0;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  font-size: 20px;
+}
+
+label:hover {
+  background: #e0dbff;
+  transform: translateX(5px);
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #d50a0a;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: "FC ICONIC", sans-serif;
+}
+
+button:hover {
+  background: #bd0909;
+}
+
+.result {
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background: #dadadb;
+  display: none;
+  animation: fadeIn 1s ease;
+  
+}
+
+.result img {
+  max-width: 90px;
+  margin-bottom: 20px;
+  margin: 0 auto; 
+  display: block; 
+}
+
+.result p {
+    font-size: 20px;        /* ขนาดตัวอักษร */
+  line-height: 1.6;       /* ระยะห่างระหว่างบรรทัด */
+  color:#000000;            /* สีตัวอักษร */
+  margin-top: 0px;       /* ระยะห่างด้านบน */
+  margin-bottom: 0px;     /* ระยะห่างด้านล่าง */
+  text-align: center;     /* จัดตัวอักษรตรงกลาง */
+  letter-spacing: 0.5px;  /* ระยะห่างระหว่างตัวอักษร */
+  padding: 0 15px;        /* เว้นขอบซ้าย-ขวา */
+}
+
+.result h2 {
+  color:#bd0909;
+  margin-bottom: 1px;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  position: fixed;       /* ติดอยู่ที่หน้าจอ */
+  bottom: 0;             /* ด้านล่างสุด */
+  left: 0;
+  width: 100%;           /* ขยายเต็มหน้าจอ */
+  background:#000000; /* ใส่ bg โปร่งแสง */
+  color: #fff;           /* ตัวอักษรสีขาว */
+  text-align: center;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "FC ICONIC", sans-serif;
+  z-index: 1000;         /* อยู่เหนือ element อื่น */
+}

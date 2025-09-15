@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ไขปริศนาในเงามืด</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Personality Quiz</h1>
+    <h2>ไขปริศนาในเงามืด</h2>
+    <p class="subtitle">คุณมี “บุคลิกนักสืบ” แบบไหนกันนะ?</p>
+
+    <div id="quiz">
+      <!-- คำถามจะแสดงทีละหน้า -->
+      <div class="question active" data-question="1">
+        <p>1. คุณเดินเข้าไปในคฤหาสน์ร้างเพื่อสืบหาความจริง สิ่งแรกที่คุณสังเกตคือ...</p>
+        <label><input type="radio" name="q1" value="A"> ร่องรอยขีดเขียนบนผนัง เหมือนข้อความลับ</label>
+        <label><input type="radio" name="q1" value="B"> หน้าต่างแตกที่ลมพัดเข้ามา ทำให้ผ้าม่านปลิวว่อน</label>
+        <label><input type="radio" name="q1" value="C"> เสียงก๊อกแก๊กจากห้องใต้ดิน</label>
+        <button class="next">ถัดไป</button>
+      </div>
+
+      <div class="question" data-question="2">
+        <p>2. บนโต๊ะมีสมุดบันทึกเก่า หน้าสุดท้ายเขียนไว้ว่า: “กุญแจอยู่ที่…” คุณคิดว่ากุญแจหมายถึงอะไร?</p>
+        <label><input type="radio" name="q2" value="A"> รหัสเชิงสัญลักษณ์หรือปริศนา</label>
+        <label><input type="radio" name="q2" value="B"> คนสำคัญที่เกี่ยวข้องกับคดี</label>
+        <label><input type="radio" name="q2" value="C"> กุญแจจริง ๆ ที่ซ่อนอยู่ในบ้าน</label>
+        <button class="next">ถัดไป</button>
+      </div>
+
+      <div class="question" data-question="2">
+        <p>3. คุณพบคนแปลกหน้าที่อ้างว่ามีข้อมูลสำคัญ แต่ต้องแลกด้วยบางสิ่ง คุณจะ…</p>
+        <label><input type="radio" name="q2" value="A"> สังเกตพฤติกรรม น้ำเสียง สีหน้า เพื่อแยกแยะความจริง</label>
+        <label><input type="radio" name="q2" value="B"> เจรจาแลกเปลี่ยนอย่างมั่นใจ เพื่อให้ได้ข้อมูลมา</label>
+        <label><input type="radio" name="q2" value="C"> แสร้งทำทีเชื่อ แต่ในใจเตรียมหาทางลับออก</label>
+        <button class="next">ถัดไป</button>
+      </div>
+
+      <div class="question" data-question="2">
+        <p>4. ในห้องเก็บของมืดมิด คุณเจอ 3 สิ่งเลือกได้อย่างเดียว:</p>
+        <label><input type="radio" name="q2" value="A"> แผนที่เก่า</label>
+        <label><input type="radio" name="q2" value="B"> ตะเกียงไฟ</label>
+        <label><input type="radio" name="q2" value="C"> กุญแจเหล็ก</label>
+        <button class="next">ถัดไป</button>
+      </div>
+
+      <div class="question" data-question="3">
+        <p>5. เมื่อใกล้จะถึงจุดคลี่คลายปริศนา คุณต้องเผชิญกับ “ความจริงที่เจ็บปวด” วิธีที่คุณรับมือคือ…</p>
+        <label><input type="radio" name="q3" value="A"> ยอมรับและบันทึกความจริงไว้อย่างละเอียด</label>
+        <label><input type="radio" name="q3" value="B"> เผชิญหน้าอย่างตรงไปตรงมา แม้จะเสี่ยง</label>
+        <label><input type="radio" name="q3" value="C"> ปกป้องคนรอบข้าง แม้ต้องปิดบังบางเรื่อง</label>
+        <button id="finish">✨ ดูผลลัพธ์ ✨</button>
+      </div>
+    </div>
+
+    <div id="result" class="result">
+      <img id="resultImg" src="" alt="result" style="display:none;">
+      <h2 id="resultTitle"></h2>
+      <p id="resultDesc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p>Created by Moopalow | p.s. This is just a DEMO</p>
+</footer>
+
+
+</html>

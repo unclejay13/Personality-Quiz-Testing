@@ -18,7 +18,7 @@ body {
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.5);
   max-width: 600px;
-  width: 100%;
+  width: 80%;
   animation: fadeIn 1s ease;
 }
 
@@ -155,4 +155,5 @@ footer {
   font-family: "FC ICONIC", sans-serif;
   z-index: 1000;         /* อยู่เหนือ element อื่น */
 }
+
 

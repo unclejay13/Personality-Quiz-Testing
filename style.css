@@ -8,7 +8,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-image: url('img/bgTest.jpg');
+  background-image: url(https://i.postimg.cc/MGj7hs8X/bgTest.jpg);
   background-size: cover;
 }
 
@@ -155,3 +155,4 @@ footer {
   font-family: "FC ICONIC", sans-serif;
   z-index: 1000;         /* อยู่เหนือ element อื่น */
 }
+
